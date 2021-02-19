@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style-reserve.css">
+    <link rel="stylesheet" href="style/footer.css">
+</head>
+
+<body>
+    <nav>
+        <input id="nav-toggle" type="checkbox">
+        <div class="logo"> <img style="height: 80%;" src="images/logo.png">
+        </div>
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="reserve.html">Reserve</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+    <div class="espace">
+        <div class="block1">
+            <center>
+                <h2>Reserve</h2>
+            </center>
+        </div>
+        <div>
+               <center> <form class="my-form">
+                    <div >
+                        <label for="jours">Nombre de jours :</label>
+                        <input type="number" min="1" value="1" id="jours" aria-describedby="jours" required>
+                    </div>
+                    <div >
+                        <label  for="carburant">Carburant</label>
+                        <select  id="carburant" required>
+                            <option value="Moto">Moto</option>
+                            <option value="Citadine">Citadine</option>
+                            <option value="Compact">Compact</option>
+                            <option value="Utilitaire">Utilitaire</option>
+                            <option value="Engin de Chantier">Engin de Chantier</option>
+                            <option value="Berline">Berline</option>
+                            <option value="Camion">Camion</option>
+                        </select>
+                    </div>
+                    <div >
+                        <label  for="type">Type de véhicule :</label>
+                        <select id="type">
+                            <option ></option>
+                            <option >Manuelle</option>
+                            <option >Automatique</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="boite-vitesse">Boîte à vitesse :</label>
+                        <select  id="boiteV" required>
+                            <option>Open this select menu</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button type="submit" id="Envoyer">Submit</button>
+                    </div>
+                </form>
+                <div id="price"></div>
+            </div></center>
+    </div>
+    <footer>
+        <div class="main-content">
+            <div class="left box">
+                <h2>About Us</h2>
+                <div class="content">
+                    <center><img style="width: 120px;" src="images/logo.png" alt=""></br>
+                        <img style="width: 120px;" src="images/rat.png" alt=""></br>
+                        <span class="text">Lorem ipsum dolor sit amet consectetur soluta, porro et, eveniet
+                            perspiciatis
+                            rerum?</span>
+                        <p style="color:  #8f9296;font-size: 14px;font-weight: normal; margin: 0;">© 2019 Eduonix
+                            Learning Solutions
+                            Pvt. Ltd.</p>
+                    </center>
+                </div>
+            </div>
+
+            <div class="center box">
+                <h2>Address</h2>
+                <div class="content">
+                    <div>
+                        <span class="fas"></span>
+                        <span class="text">Birendranagar, Surkhet</span>
+                    </div>
+                    <div class="phone">
+                        <span class="fas"></span>
+                        <span class="text">+089-765432100</span>
+                    </div>
+                    <div>
+                        <span class="fas"></span>
+                        <span class="text">abc@example.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right box">
+                <h2>Quick Links</h2>
+                <div class="content">
+                    <a href="#">Home</a>
+                    <br>
+                    <a href="#">Blog</a>
+                    <br>
+                    <a href="#">About</a>
+                    <br>
+                    <a href="#">Contact</a>
+                    </p>
+                </div>
+
+            </div>
+    </footer>
+</body>
+
+</html>
+</div>
+<script src="./main.js"></script>
+</body>
+
+</html>

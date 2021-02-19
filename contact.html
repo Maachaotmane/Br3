@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Description" content="Page Conact Us responsive">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/style-contact.css">
+</head>
+
+<body>
+    <nav>
+        <input id="nav-toggle" type="checkbox">
+        <div class="logo"> <img style="height: 80%;" src="images/logo.png" alt="logo-nav">
+        </div>
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="reserve.html">Reserve</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+    <div class="espace">
+        <div class="block1">
+            <center>
+                <h2>Contact Us</h2>
+            </center>
+        </div>
+        <div id="form">
+            <input type="text" placeholder="Nom complete" name="Nom complet" id="name">
+            <input type="text" placeholder="Email" name="Email" id="mail">
+            <input type="text" placeholder="Objet" name="objet" id="objet">
+            <textarea name="Message" placeholder="Message..." id="Message" cols="30" rows="10"
+                maxlength="500"></textarea>
+            <br>
+            <input type="button" id="Envoyer" value="Envoyer">
+            <input type="reset" id="effacer" value="Vider" onclick="funcreset();">
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content" id="modal-content">
+            </div>
+        </div>
+        <footer>
+            <div class="main-content">
+                <div class="left box">
+                    <h2>About Us</h2>
+                    <div class="content">
+                        <center><img style="width: 120px;" src="images/logo.png" alt="logo"></br>
+                            <img style="width: 120px;" src="images/rat.png" alt="rating"></br>
+                            <span class="text">Lorem ipsum dolor sit amet consectetur soluta, porro et, eveniet
+                                perspiciatis
+                                rerum?</span>
+                            <p style="color:  #8f9296;font-size: 14px;font-weight: normal; margin: 0;">© 2019 Eduonix
+                                Learning Solutions
+                                Pvt. Ltd.</p>
+                        </center>
+                    </div>
+                </div>
+
+                <div class="center box">
+                    <h2>Address</h2>
+                    <div class="content">
+                        <div>
+                            <span class="fas"></span>
+                            <span class="text">Birendranagar, Surkhet</span>
+                        </div>
+                        <div class="phone">
+                            <span class="fas"></span>
+                            <span class="text">+089-765432100</span>
+                        </div>
+                        <div>
+                            <span class="fas"></span>
+                            <span class="text">abc@example.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right box">
+                    <h2>Quick Links</h2>
+                    <div class="content">
+                        <center>
+                            <a href="#">Home</a>
+                            <br>
+                            <a href="#">Blog</a>
+                            <br>
+                            <a href="#">About</a>
+                            <br>
+                            <a href="#">Contact</a>
+                            </p>
+                    </div>
+                    </center>
+                </div>
+        </footer>
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("Envoyer");
+
+            // When the user clicks the button, open the modal
+            btn.onclick = function () {
+                modal.style.display = "block";
+                var name = document.getElementById("name").value,
+                    Email = document.getElementById("mail").value,
+                    objet = document.getElementById("objet").value,
+                    Message = document.getElementById("Message").value;
+                const modalContent = document.getElementById('modal-content');
+                modalContent.innerHTML = '<h1 style="color:black">Bonjour Mr/Mlle :<span class="decor">' + name + '</span>' + '</h1> Votre message est bien recu d email :<span class="decor"> <br>' + Email + '</span>' + '<br>Le message about :<span class="decor">' + objet + '</span>' + ' et le message :<span class="decor">' + Message + '</span>';
+            }
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            function funcreset() {
+                document.getElementById("name").value = "";
+                document.getElementById("mail").value = "";
+                document.getElementById("objet").value = "";
+                document.getElementById("Message").value = "";
+            }
+        </script>
+
+</body>
+
+</html>

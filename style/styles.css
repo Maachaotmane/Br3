@@ -1,0 +1,60 @@
+h1 {
+    margin: 0;
+    color: red;
+}
+
+#div1,
+#form {
+    text-align: center;
+    margin: auto;
+}
+
+#div1 {
+    text-align: justify !important;
+    display: none;
+    border: black dotted 1px;
+    width: 48%;
+}
+
+#form {
+    width: 80%;
+}
+
+#societe,
+#tele,
+#name,
+#mail,
+#objet,
+textarea {
+    padding-left: 1.6%;
+    background-color: lightgrey;
+    border: none;
+    width: 40%;
+    border-radius: 4px;
+    height: 30px;
+    margin: 1%;
+}
+
+#objet,
+textarea {
+    width: 84.3%;
+}
+
+textarea {
+    height: auto;
+}
+
+#Envoiyer {
+    background-color: red;
+    width: 20%;
+    height: 30px;
+    margin-right: 40%;
+    margin-left: 40%;
+    margin-bottom: 20px;
+}
+
+label,
+p {
+    display: inline-block;
+    margin: 10px;
+}

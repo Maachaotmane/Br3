@@ -1,0 +1,49 @@
+
+.block1{
+    margin-top: -20px;
+    background-color: #FF0000;
+    width: 100%;
+    height: 90px;
+}
+.block1 h2{
+  padding-top: 20px;
+  color: #fff;
+}
+label{
+    color: black;
+}
+.my-form{
+    width: 90%;
+    margin-top: 90px;
+    padding: 10px;
+    text-decoration-color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+input[type=text],input[type=number], select, option{
+    color: black;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+.text-primary{
+    color: black;
+}
+#Envoyer {
+    color: white;
+    background-color: black;
+    width: 20%;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 40%;
+    margin-left: 40%;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
